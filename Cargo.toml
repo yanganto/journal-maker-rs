@@ -1,0 +1,13 @@
+[package]
+name = "journal-maker-rs"
+version = "0.1.0"
+authors = ["Antonio Yang <antonio.yang@siliconmotion.com.tw>"]
+
+[dependencies]
+gotham = "0.3.0"
+mime = "0.3.12"
+hyper = "0.12.14"
+http = "0.1"
+
+
+
