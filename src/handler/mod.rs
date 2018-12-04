@@ -1,10 +1,18 @@
 use gotham::state::State;
+// use gotham::handler::assets::FileOptions;
+use hyper::Uri;
 
 const GREETING: &'static str = "Powered by Rust";
 
 pub fn greeting(state: State) -> (State, &'static str) {
     (state, GREETING)
 }
+
+pub fn journal_json(state: State) -> (State, &'static str)  {
+    let uri = Uri::borrow_from(state);
+    (state, uri)
+}
+
 
 #[cfg(test)]
 mod tests {
