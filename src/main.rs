@@ -2,6 +2,9 @@ extern crate actix_web;
 extern crate futures;
 extern crate serde;
 extern crate serde_json;
+extern crate jsonwebtoken as jwt;
+extern crate chrono;
+extern crate sha2;
 
 #[macro_use]
 extern crate serde_derive;
